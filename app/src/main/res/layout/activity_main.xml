@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Questions"
+            android:textSize="32sp"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q 1 - Can a user save all database updates in onStop ()?"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginLeft="20sp"/>
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rgroup"
+            android:layout_marginLeft="30sp"
+            android:layout_marginBottom="25sp">
+            <RadioButton
+                android:id="@+id/r1"
+                android:layout_width="wrap_content"
+                android:layout_height="25sp"
+                android:layout_marginTop="15sp"
+                android:text="Yes, a user can save all database updates in onStop()" />
+            <RadioButton
+                android:id="@+id/r2"
+                android:layout_width="wrap_content"
+                android:layout_height="25sp"
+                android:text="No, a user can save in onSavedInstance()" />
+            <RadioButton
+                android:id="@+id/r3"
+                android:layout_width="wrap_content"
+                android:layout_height="25sp"
+                android:text="No, a user can save in a Bundle()" />
+            <RadioButton
+                android:id="@+id/r4"
+                android:layout_width="wrap_content"
+                android:layout_height="25sp"
+                android:text="No, In some situations, a user can't reach onStop()" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:text="Q 2 - How to pass the data between activities in Android?"
+            android:textStyle="bold|italic" />
+        <CheckBox
+            android:id="@+id/c1"
+            android:layout_width="wrap_content"
+            android:layout_height="25sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="35sp"
+            android:text="Intent"/>
+        <CheckBox
+            android:id="@+id/c2"
+            android:layout_width="wrap_content"
+            android:layout_height="25sp"
+            android:layout_marginLeft="35sp"
+            android:text="Broadcast receiver"/>
+        <CheckBox
+            android:id="@+id/c3"
+            android:layout_width="wrap_content"
+            android:layout_height="25sp"
+            android:layout_marginLeft="35sp"
+            android:layout_marginBottom="25sp"
+            android:text="Content Provider"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="submit"/>
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="reset"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
